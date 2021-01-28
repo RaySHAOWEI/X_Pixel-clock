@@ -1,0 +1,207 @@
+void maohao(const uint16_t color)
+{
+  matrix.drawPixel(20, 2, color);
+  matrix.drawPixel(20, 4, color);
+}
+//冒号显示（固定位置）
+void henggang(const uint16_t color)
+{
+  matrix.drawPixel(20, 3, color);
+  matrix.drawPixel(21, 3, color);
+  matrix.drawPixel(22, 3, color);
+}
+//横杠显示（固定位置）
+void zero(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 4, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+}
+//数字0显示
+void one(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 2, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(1 + led_x, 4, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+}
+//数字1显示
+void two(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 4, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+}
+//数字2显示
+void three(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+}
+//数字3显示
+void four(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+}
+//数字4显示
+void five(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+}
+//数字5显示
+void six(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 4, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+}
+//数字6显示
+void seven(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+}
+//数字7显示
+void eight(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 4, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+}
+//数字8显示
+void nine(int led_x, const uint16_t color)
+{
+  matrix.drawPixel(0 + led_x, 1, color);
+  matrix.drawPixel(1 + led_x, 1, color);
+  matrix.drawPixel(2 + led_x, 1, color);
+  matrix.drawPixel(0 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 2, color);
+  matrix.drawPixel(2 + led_x, 3, color);
+  matrix.drawPixel(2 + led_x, 4, color);
+  matrix.drawPixel(2 + led_x, 5, color);
+  matrix.drawPixel(0 + led_x, 3, color);
+  matrix.drawPixel(1 + led_x, 3, color);
+  matrix.drawPixel(0 + led_x, 5, color);
+  matrix.drawPixel(1 + led_x, 5, color);
+}
+//数字9显示
+
+void prints(int num, int x, const uint16_t c)
+{
+  switch (num)
+  {
+  case 0:
+    zero(x, c);
+    break;
+
+  case 1:
+    one(x, c);
+    break;
+
+  case 2:
+    two(x, c);
+    break;
+
+  case 3:
+    three(x, c);
+    break;
+
+  case 4:
+    four(x, c);
+    break;
+
+  case 5:
+    five(x, c);
+    break;
+
+  case 6:
+    six(x, c);
+    break;
+
+  case 7:
+    seven(x, c);
+    break;
+
+  case 8:
+    eight(x, c);
+    break;
+
+  case 9:
+    nine(x, c);
+    break;
+  }
+}
